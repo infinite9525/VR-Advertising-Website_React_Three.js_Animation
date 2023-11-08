@@ -1,0 +1,27 @@
+.wrapper {
+  @apply px-2 flex flex-col justify-center w-full min-h-screen items-center relative;
+
+  .video {
+    @apply fixed left-0 top-0 object-cover w-full h-full;
+  }
+
+  .pageBackground {
+    @apply fixed left-0 top-0 object-cover w-full h-full select-none;
+  }
+
+  .logo {
+    @apply absolute left-10 xs:left-30 sm:left-60 top-30 sm:top-60 w-240 xs:w-320 h-75 xs:h-100 z-10;
+  }
+
+  .textWrapper {
+    @apply absolute bottom-80 flex flex-col items-center justify-center gap-2;
+
+    .textAr {
+      @apply text-20 xs:text-24 xl:text-30 -my-2 text-white font-w23Medium text-center m-0 select-none;
+    }
+
+    .textEn {
+      @apply text-16 xs:text-20 xl:text-24 font-w23Medium -my-2 text-white text-center m-0 select-none;
+    }
+  }
+}

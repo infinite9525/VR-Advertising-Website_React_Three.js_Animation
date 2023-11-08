@@ -1,0 +1,15 @@
+.pageBackground {
+  @apply fixed left-0 top-0 object-cover w-full h-full select-none;
+}
+
+.dragField {
+  @apply fixed top-0 left-0 w-full h-full select-none;
+}
+
+.wrapper {
+  @apply w-full h-full flex items-center z-10;
+
+  .content {
+    @apply sm:grid gap-20 flex flex-col items-center justify-center sm:grid-cols-2 lg:grid-cols-3 w-full h-full;
+  }
+}

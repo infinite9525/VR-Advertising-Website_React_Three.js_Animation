@@ -1,0 +1,94 @@
+.canvasWrapper {
+  @apply flex flex-col items-center justify-center w-full col-span-1 lg:col-start-2;
+
+  .canvas {
+    @apply w-100 xs:w-150 h-100 xs:h-150 relative -mt-300;
+
+    .text {
+      @apply absolute left-1/2 -bottom-40 w-300 transform -translate-x-1/2;
+
+      .logoTextAr {
+        @apply text-16 xs:text-20 xl:text-25;
+      }
+
+      .logoTextEn {
+        @apply text-14 xs:text-16 xl:text-20;
+      }
+    }
+  }
+
+  .titleWrapper {
+    @apply mt-150;
+
+    .titleAr {
+      @apply text-20 xs:text-28 xl:text-36 -my-2;
+    }
+
+    .titleEn {
+      @apply text-16 xs:text-24 xl:text-28 font-w23Medium -my-2;
+    }
+  }
+
+  .pageSlide {
+    @apply absolute bottom-20 xs:bottom-40 sm:bottom-60 flex z-30;
+
+    .number {
+      @apply text-20 mx-2 font-w23Medium border-none select-none text-white;
+    }
+  }
+}
+
+.descriptionWrapper {
+  @apply flex flex-col items-center justify-center gap-30;
+
+  .description {
+    @apply gap-20;
+
+    .descriptionAr {
+      @apply text-right text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+    }
+
+    .descriptionEn {
+      @apply text-left text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+    }
+  }
+  .buttonGroup {
+    @apply w-full flex items-center justify-center;
+
+    .buttons {
+      @apply flex flex-wrap gap-10 xs:gap-15 items-center;
+
+      .button {
+        @apply w-30 sm:w-40 h-30 sm:h-40;
+      }
+    }
+  }
+}
+
+.division {
+  @apply absolute left-0 w-full  flex flex-col items-center justify-center z-10 my-150;
+
+  .titleAr {
+    @apply font-w23Medium text-16 xs:text-24 xl:text-32 -my-2;
+  }
+
+  .titleEn {
+    @apply font-w23Medium text-14 xs:text-20 xl:text-28 -my-2;
+  }
+
+  .content {
+    @apply mt-40;
+
+    .labelAr {
+      @apply font-w23Medium text-23;
+    }
+
+    .labelEn {
+      @apply font-w23Medium text-20;
+    }
+  }
+}
+
+.video {
+  @apply fixed left-0 top-0 object-cover w-full h-full z-20;
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  @apply flex flex-col justify-center gap-2;
+
+  .textWrapper {
+    @apply flex flex-col;
+
+    &.order {
+      @apply order-2;
+    }
+
+    .titleAr {
+      @apply text-25 text-white font-w23Medium text-right m-0 select-none mx-5;
+    }
+
+    .titleEn {
+      @apply text-25 text-white font-w23Medium text-left m-0 select-none mx-5;
+    }
+
+    .item {
+      @apply flex flex-row justify-end;
+
+      &.en {
+        @apply justify-start;
+      }
+
+      .textAr {
+        @apply text-20 text-white font-w23Medium m-0 select-none text-right;
+      }
+
+      .textEn {
+        @apply text-20 text-white font-w23Medium m-0 select-none text-left;
+      }
+
+      .icon {
+        @apply min-w-10 h-10 mx-5 mt-13;
+      }
+    }
+  }
+}

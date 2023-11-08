@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Conthrax';
+  src: local('Conthrax'), url(./assets/fonts/conthrax-sb.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'W23Bold';
+  src: local('W23Bold'), url(./assets/fonts/DIN\ Next\ LT\ W23\ Bold.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'W23Medium';
+  src: local('W23Medium'), url(./assets/fonts/DIN-NEXT-LT-W23-MEDIUM.otf) format('truetype');
+}
+
+:root {
+  --animate-delay: 0.5s;
+}
+
+.carousel__controls {
+  @apply mt-30;
+}
+
+.carousel .carousel__container .carousel__slide {
+  @apply border-none;
+}
+
+.carousel__controls .carousel__control {
+  @apply bg-transparent border-none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

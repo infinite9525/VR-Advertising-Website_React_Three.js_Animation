@@ -1,0 +1,23 @@
+.wrapper {
+  @apply w-full h-full relative;
+
+  .slider {
+    @apply w-155 absolute transform;
+
+    &.slider1 {
+      @apply rotate-150 top-32 left-10;
+    }
+
+    &.slider2 {
+      @apply rotate-90 top-147 -left-56;
+    }
+
+    &.slider3 {
+      @apply rotate-30 top-32 right-10;
+    }
+
+    &.slider4 {
+      @apply rotate-90 top-147 -right-56;
+    }
+  }
+}

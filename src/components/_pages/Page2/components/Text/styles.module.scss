@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex flex-col justify-end -mr-50 gap-20;
+
+  .text {
+    @apply text-white text-16 xs:text-20 lg:text-28 font-Conthrax text-center md:text-right leading-26;
+
+    &.first {
+      @apply text-20 xs:text-28 lg:text-36 font-w23Medium leading-36;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.wrapper {
+  @apply w-full h-full;
+
+  &.model3 {
+    @apply absolute -top-15;
+  }
+
+  .canvas {
+    @apply w-full h-full bg-transparent;
+  }
+}

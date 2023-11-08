@@ -1,0 +1,7 @@
+.wrapper {
+  @apply border-2 border-gray-200 w-20 h-20 rounded-full flex items-center justify-center;
+
+  .inside {
+    @apply border-2 border-white w-10 h-10 rounded-full;
+  }
+}

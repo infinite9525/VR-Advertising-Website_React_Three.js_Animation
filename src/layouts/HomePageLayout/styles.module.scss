@@ -1,0 +1,35 @@
+.wrapper {
+  @apply w-full h-screen p-10 pt-30 xs:p-30 sm:p-60 relative overflow-hidden;
+
+  .logo {
+    @apply absolute left-10 xs:left-30 sm:left-60 top-10 sm:top-30 w-240 xs:w-320 h-75 xs:h-100 z-10;
+  }
+
+  .rightLogo {
+    @apply absolute top-30 sm:top-60 right-10 xs:right-30 sm:right-60 w-150 z-10;
+  }
+
+  .close {
+    @apply w-30 h-30 absolute bottom-10 xs:bottom-30 sm:bottom-60 left-10 xs:left-30 sm:left-60 cursor-pointer  z-10;
+  }
+
+  .next {
+    @apply absolute right-10 xs:right-30 sm:right-60 bottom-10 xs:bottom-30 sm:bottom-60 flex gap-1 items-center border-none  z-10;
+
+    .icon {
+      @apply w-30 h-30 mt-1;
+    }
+
+    .textWrapper {
+      @apply flex flex-col justify-center items-center;
+
+      .text {
+        @apply text-12 xs:text-15 font-w23Medium m-0 -my-1 text-white select-none;
+      }
+    }
+  }
+
+  .content {
+    @apply z-0 w-full h-full;
+  }
+}

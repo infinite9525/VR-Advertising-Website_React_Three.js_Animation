@@ -1,0 +1,63 @@
+.logo {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
+
+  .circleWrapper {
+    @apply relative w-full h-full;
+
+    .canvas {
+      @apply w-300 h-300;
+    }
+
+    .circle1 {
+      @apply absolute -top-2 left-180;
+    }
+
+    .circle2 {
+      @apply absolute -left-2 bottom-101;
+    }
+
+    .circle3 {
+      @apply absolute right-180 -bottom-2;
+    }
+
+    .circle4 {
+      @apply absolute right-31 bottom-33;
+    }
+
+    .progressBar {
+      @apply w-308 h-308 absolute -left-1 -top-1 transform rotate-15;
+
+      &.point1 {
+        @apply transform -rotate-105;
+      }
+
+      &.point2 {
+        @apply transform -rotate-165;
+      }
+
+      &.point3 {
+        @apply transform rotate-135;
+      }
+    }
+  }
+}
+
+.hexagon {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-308 h-308;
+}
+
+.text {
+  @apply absolute top-3/4 md:top-1/2 -translate-y-3/4 md:-translate-y-1/2 left-1/2 md:right-50 xl:left-3/4 transform -translate-x-1/2 md:-translate-x-0 xl:-translate-x-3/4 select-none xl:w-400 flex flex-col;
+
+  .title {
+    @apply text-60 font-Conthrax -my-25 text-white text-right  -mr-50;
+  }
+}
+
+.dragField {
+  @apply fixed top-0 left-0 w-full h-full select-none;
+}
+
+.pageBackground {
+  @apply fixed left-0 top-0 object-cover w-full h-full;
+}

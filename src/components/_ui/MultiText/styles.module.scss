@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex flex-col justify-center gap-2;
+
+  .textAr {
+    @apply text-20 text-white font-w23Medium text-center m-0 select-none;
+  }
+
+  .textEn {
+    @apply text-20 text-white font-Conthrax text-center m-0 select-none;
+  }
+}

@@ -1,0 +1,80 @@
+.pageBackground {
+  @apply fixed left-0 top-0 object-cover w-full h-full select-none -z-10;
+}
+
+.background {
+  @apply absolute left-0 top-0 -z-10 w-full h-full;
+}
+
+.dragField {
+  @apply fixed top-0 left-0 w-full h-full select-none;
+}
+
+.wrapper {
+  @apply w-full h-full flex items-center max-h-full  z-10 overflow-hidden;
+
+  .content {
+    @apply sm:grid gap-20 flex flex-col items-center justify-center sm:grid-cols-2 lg:grid-cols-3 w-full h-full;
+
+    .canvasWrapper {
+      @apply flex flex-col items-center justify-center w-full col-span-1 lg:col-start-2;
+
+      .canvas {
+        @apply w-150 xs:w-200 h-150 xs:h-200;
+      }
+
+      .logoTextAr {
+        @apply text-20 xs:text-28 xl:text-36;
+      }
+
+      .logoTextEn {
+        @apply text-16 xs:text-24 xl:text-28;
+      }
+    }
+
+    .descriptionWrapper {
+      .descriptionAr {
+        @apply text-right text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+      }
+      .descriptionEn {
+        @apply text-left text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+      }
+    }
+
+    .descriptionWrapper1 {
+      @apply flex flex-row items-center justify-center;
+
+      .descriptionEn {
+        @apply whitespace-pre-line text-12 xs:text-16 lg:text-20 xl:text-20 font-w23Medium;
+      }
+
+      .descriptionAr {
+        @apply whitespace-pre-line text-12 xs:text-16 lg:text-20 xl:text-20 font-w23Medium;
+      }
+    }
+
+    .descriptionWrapper2 {
+      .descriptionAr {
+        @apply text-right whitespace-pre-line text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium text-white;
+      }
+      .descriptionEn {
+        @apply text-left whitespace-pre-line text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium text-white;
+      }
+    }
+
+    // .descriptionWrapper {
+    //   @apply flex flex-col items-center justify-center gap-6;
+
+    //   .descriptionAr {
+    //     @apply text-right text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+    //   }
+    //   .descriptionEn {
+    //     @apply text-justify text-12 xs:text-16 lg:text-20 xl:text-25 font-w23Medium;
+    //   }
+    // }
+
+    .video {
+      @apply fixed left-0 top-0 object-cover w-full h-full;
+    }
+  }
+}
